@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="img/cloud-logo.ico" width="14px">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dropdown</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container-logo">
+            <a href="index.html"><img class="logo" src="img/cloud-logo.png" alt=""></a>
+        </div>
+        <div class="container-menu">
+            <ul class="menu">
+                <a href="#">
+                    <li class="menu-item border">HOME</li>
+                </a>
+                <a href="#">
+                    <li class="menu-item border">EMPRESA</li>
+                </a>
+                <div class="container-dropdown">
+                    <li class="menu-item target-drop">PACOTES &nbsp<img src="img/seta.png" alt="seta-drop" height="17px"></li>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-item">PACOTE SIMPLES</a>
+                        <a href="#" class="dropdown-item">PACOTE MEDIO</a>
+                        <a href="#" class="dropdown-item">PACOTE PREMIUM</a>
+                    </div>
+                </div>
+                <a href="#">
+                    <li class="menu-item border">CONTATO</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>

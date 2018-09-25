@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(#a6dfff, #fff);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+nav{
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.logo{
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+}
+.menu-item{
+    cursor: pointer;
+    padding: 0px 25px 15px 25px;
+}
+.border{
+    border-bottom: #006fb400 2px solid;
+}
+.border:hover, .dropdown-item:hover{
+    transition: 0.5s;
+    border-bottom: #6fccff 2px solid;
+}
+.target-drop{
+    display: flex;
+    align-items: center;
+}
+/*DROPDOWN STYLE*/
+.container-dropdown{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown{
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+}
+.dropdown-item{
+    padding: 4px 0px;
+    border-bottom: #fdfdfd00 2px solid;
+}
+
+@keyframes opacity{
+    0%{opacity: 0;}
+    50%{opacity: 0.50;}
+    100%{opacity: 1;}
+}
+
+.open{
+    display: flex;
+    /* transition: 1s; */
+    animation: opacity 0.4s linear ;
+}
