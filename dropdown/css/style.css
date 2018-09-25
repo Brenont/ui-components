@@ -7,10 +7,12 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-}
-nav{
-    color: #000;
     font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+/* NAV DESKTOP */
+.nav-desktop{
     padding: 15px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -45,6 +47,7 @@ a{
     display: flex;
     align-items: center;
 }
+
 /*DROPDOWN STYLE*/
 .container-dropdown{
     display: flex;
@@ -70,4 +73,31 @@ a{
     display: flex;
     /* transition: 1s; */
     animation: opacity 0.4s linear ;
+}
+
+/* NAV MOBILE */
+.nav-mobile{
+    background-color: rgb(182, 182, 182);
+    display: none;
+    height: 100vh;
+    width: 230px;
+    /* left: -230px; */
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-mobile{
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+@media(max-width: 768px){
+    .nav-desktop{
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+    }
 }
