@@ -1,103 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: linear-gradient(#a6dfff, #fff);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+
+body {
     font-family: 'Open Sans', sans-serif;
-    color: #000;
 }
 
-/* NAV DESKTOP */
-.nav-desktop{
+nav {
+    color: #fff;
+    background-color: rgb(22, 22, 22);
     padding: 15px 0px 0px 0px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
-a{
-    color: #000;
+
+a {
+    color: #fff;
     text-decoration: none;
 }
-.logo{
-    height: 100px;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-.menu{
+
+ul {
     display: flex;
     list-style-type: none;
 }
-.menu-item{
+
+li {
+    list-style-type: none;
     cursor: pointer;
     padding: 0px 25px 15px 25px;
 }
-.border{
-    border-bottom: #006fb400 2px solid;
-}
-.border:hover, .dropdown-item:hover{
-    transition: 0.5s;
-    border-bottom: #6fccff 2px solid;
-}
-.target-drop{
-    display: flex;
-    align-items: center;
-}
 
 /*DROPDOWN STYLE*/
-.container-dropdown{
-    display: flex;
+.container-dropdown {
+    position: relative;
     flex-direction: column;
+    display: inline-block;
 }
-.dropdown{
+
+.dropdown {
+    background-color: #3d3d3d;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
     display: none;
     flex-direction: column;
     list-style-type: none;
-}
-.dropdown-item{
-    padding: 4px 0px;
-    border-bottom: #fdfdfd00 2px solid;
+    z-index: 1;
+    overflow: auto;
 }
 
-@keyframes opacity{
-    0%{opacity: 0;}
-    50%{opacity: 0.50;}
-    100%{opacity: 1;}
+.drop-item {
+    padding: 12px 16px;
 }
 
-.open{
+.open-drop {
     display: flex;
-    /* transition: 1s; */
-    animation: opacity 0.4s linear ;
-}
-
-/* NAV MOBILE */
-.nav-mobile{
-    background-color: rgb(182, 182, 182);
-    display: none;
-    height: 100vh;
-    width: 230px;
-    /* left: -230px; */
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
-.logo-mobile{
-    height: 80px;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-
-@media(max-width: 768px){
-    .nav-desktop{
-        display: none;
-    }
-    .nav-mobile{
-        display: flex;
-    }
 }
