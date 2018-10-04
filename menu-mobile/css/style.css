@@ -21,7 +21,7 @@ nav {
 }
 
 ul {
-    display: flex;
+    display: none;
     align-items: flex-start;
     flex-direction: column;
     list-style-type: none;
@@ -44,7 +44,7 @@ a {
 }
 
 .contentCloser{
-    display: none;
+    display: flex;
     justify-content: flex-end;
     width: 100%;
 }
@@ -60,6 +60,7 @@ a {
 }
 
 .openMenu {
+    display: none;
     cursor: pointer;
     font-size: 45px;
     padding: 10px 25px;
@@ -80,7 +81,7 @@ a {
     nav {
         display: flex;
     }
-    .contentCloser{
+    .openMenu{
         display: flex;
     }
 }
