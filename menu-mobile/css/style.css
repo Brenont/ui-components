@@ -44,7 +44,7 @@ a {
 }
 
 .contentCloser{
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 100%;
 }
@@ -78,6 +78,9 @@ a {
 
 @media (max-width:768px) {
     nav {
+        display: flex;
+    }
+    .contentCloser{
         display: flex;
     }
 }
